@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #dcd8d2;
+  font-family: roboto;
+  font-size: 16px;
+  color: #fff;
+}
+
+nav{
+  font-size: 35px;
+}
+
+.menu-spacing{
+  width: 30%;
+  min-width: 500px;
+  height:100vh;
+  background-color: #ffffff;
+}
+
+#nav-header{
+  width: 300px;
+  padding:  85px 0px 0px 90px;
+}
+
+#nav-header>h1{
+  color: #606060;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 2px;
+  /*padding-left: 5px;*/
+  padding-bottom: 25px;
+  border-bottom: 1px solid #606060;
+}
+
+/*menu bar links*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 110px 70px 20px 90px;
+}
+
+nav .menu-spacing ul li{
+  padding-bottom: 20px;
+}
+
+nav .menu-spacing>ul>li>a {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+  color: #606060;
+  padding: 0px 0px 0px 0px;
+  text-decoration: none;
+}
+nav .menu-spacing>ul>li>a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  transition: width 0s ease, background .5s ease;
+}
+nav .menu-spacing>ul>li>a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: #606060;
+  transition: width .8s ease;
+}
+
+nav .menu-spacing>ul>li>a:hover:before {
+  width: 100%;
+  background: #606060;
+  transition: width .8s ease;
+  transition-delay: .1s;
+}
+
+nav .menu-spacing>ul>li>a:hover:after {
+  width: 100%;
+  background: transparent;
+  transition: all 0s ease;
+}
+
+.social-links{
+  margin-top: 150px;
+}
+
+.social-links>ul>li{
+  display: inline;
+}
+
+.social-links ul li a>img{
+  /*display: block;
+  float: left;
+  padding-right: 15px;*/
+  height: auto;
+  width: 20px;
+}
+
+.social-links>ul>li>a{
+  transition: 0.3s;
+}
+
+.social-links>ul>li>a:hover{
+  opacity: 0.8;
+}
